@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+        .active{
+            color: red;
+        }
+
+        .static{
+            font-style:oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" :class="{static:true,active:isActive}">Hello</div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                isActive: true
+            }
+        });
+    </script>
+</body>
+
+</html>

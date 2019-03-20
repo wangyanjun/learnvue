@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <todo-item v-for="item in todos" v-bind:todo="item" v-bind:key="id"></todo-item>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        Vue.component("todo-item", {
+            props: ["todo"],
+            template: "<li>{{todo.name}}</li>"
+        });
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                todos: [{
+                        id: 5,
+                        name: "吃饭"
+                    },
+                    {
+                        id: 1,
+                        name: "睡觉"
+                    },
+                    {
+                        id: 2,
+                        name: "看电影"
+                    }
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

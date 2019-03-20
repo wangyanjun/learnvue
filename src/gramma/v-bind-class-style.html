@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app" :style="{color:activeColor,'font-size':fontSize+'px'}">Hello</div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                activeColor: "red",
+                fontSize: 50
+            }
+        });
+    </script>
+</body>
+
+</html>

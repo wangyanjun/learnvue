@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+        .active {
+            color: red;
+        }
+
+        .static {
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" :class="classObj">Hello</div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                classObj: {
+                    active: true,
+                    static: true
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

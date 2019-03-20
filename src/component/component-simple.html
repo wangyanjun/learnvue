@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <todo-item></todo-item>
+            <todo-item></todo-item>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        Vue.component("todo-item", {
+            template: "<li>I am a to-do item</li>"
+        });
+
+        var app = new Vue({
+            el: "#app"
+        });
+    </script>
+</body>
+
+</html>

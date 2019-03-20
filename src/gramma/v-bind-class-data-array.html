@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+        .danger {
+            color: red;
+        }
+
+        .active {
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" :class="[active,'danger']">Hello</div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                active: "active"
+            }
+        });
+    </script>
+</body>
+
+</html>

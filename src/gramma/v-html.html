@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>Raw: {{raw}}</p>
+        <p>Direct: <span v-html="raw"></p></p>
+    </div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                raw: "<span style='color:red'>raw html</span>"
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <span id="app" v-bind:title="message">
+        Hello. I have a title
+    </span>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                message: "Hello," + new Date().toLocaleDateString()
+            }
+        });
+    </script>
+</body>
+
+</html>

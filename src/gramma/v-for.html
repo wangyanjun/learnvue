@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="todo in todos">{{todo.desc}}</li>
+        </ul>
+        <p>{{todos.length}}</p>
+    </div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: "#app",
+            data: {
+                todos: [
+                    {desc:"学习"},
+                    {desc:"运动"},
+                    {desc:"看电影"}
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
